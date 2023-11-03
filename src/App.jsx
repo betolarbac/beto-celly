@@ -3,6 +3,7 @@ import { ButtonEffect } from "./components/button/ButtonEfecct";
 import imagemSurpresa from "./assets/miranha.jpg"
 import banner from "./assets/templo-fortaleza.png"
 import perfil from "./assets/perfil.jpg"
+import logo from "./assets/logo.png"
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
   return (
     <>
       <header className="header">
-        <img src="https://via.placeholder.com/100x80?text=Logo" alt="" />
+        <img src={logo} alt="" />
       </header>
       <div className="banner">
         <img
