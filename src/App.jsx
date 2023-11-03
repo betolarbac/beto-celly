@@ -11,12 +11,12 @@ function App() {
       </header>
       <div className="banner">
         <img
-          src="../src/assets/templo-fortaleza.png"
+          src="./src/assets/templo-fortaleza.png"
           alt=""
           className="banner__img"
         />
         <div className="container__perfil">
-          <img src="../src/assets/perfil.jpg" alt="" className="perfil" />
+          <img src="./src/assets/perfil.jpg" alt="" className="perfil" />
         </div>
       </div>
 
@@ -69,7 +69,7 @@ function App() {
               <div className="product__image-wrapper">
                 <a href="">
                   <img
-                    src="../src/assets/miranha.jpg"
+                    src="./src/assets/miranha.jpg"
                     alt=""
                   />
                 </a>

@@ -76,7 +76,7 @@ export function ButtonEffect() {
     <div>
       <button onClick={startAnimation} className="Button-effect">Surpresa</button>
       <ReactCanvasConfetti refConfetti={getInstance} style={canvasStyles} />
-      <audio ref={audioRef} src="../src/assets/musica.mp3" />
+      <audio ref={audioRef} src="./src/assets/musica.mp3" />
     </div>
   );
 }
