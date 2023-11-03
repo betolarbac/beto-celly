@@ -25,7 +25,7 @@ function App() {
       </div>
 
       <div className="list__summary">
-        <h1>Marcelly & Roberto Lista de Rresente</h1>
+        <h1>Marcelly & Roberto Lista de Presente</h1>
         <p>24 Novembro 2023</p>
         <div className="coupletext">
           <p>
