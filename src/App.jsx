@@ -69,7 +69,7 @@ function App() {
               <div className="product__image-wrapper">
                 <a href="">
                   <img
-                    src="./src/assets/miranha.jpg"
+                    src="/src/assets/miranha.jpg"
                     alt=""
                   />
                 </a>
