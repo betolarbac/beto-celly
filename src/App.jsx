@@ -1,6 +1,8 @@
 import "./App.css";
 import { ButtonEffect } from "./components/button/ButtonEfecct";
-import imagemTeste from "./assets/miranha.jpg"
+import imagemSurpresa from "./assets/miranha.jpg"
+import banner from "./assets/templo-fortaleza.png"
+import perfil from "./assets/perfil.jpg"
 
 function App() {
 
@@ -12,12 +14,12 @@ function App() {
       </header>
       <div className="banner">
         <img
-          src="./src/assets/templo-fortaleza.png"
+          src={banner}
           alt=""
           className="banner__img"
         />
         <div className="container__perfil">
-          <img src="./src/assets/perfil.jpg" alt="" className="perfil" />
+          <img src={perfil} alt="" className="perfil" />
         </div>
       </div>
 
@@ -70,7 +72,7 @@ function App() {
               <div className="product__image-wrapper">
                 <a href="">
                   <img
-                    src={imagemTeste}
+                    src={imagemSurpresa}
                     alt=""
                   />
                 </a>
