@@ -1,5 +1,6 @@
 import "./App.css";
 import { ButtonEffect } from "./components/button/ButtonEfecct";
+import imagemTeste from "./assets/miranha.jpg"
 
 function App() {
 
@@ -69,7 +70,7 @@ function App() {
               <div className="product__image-wrapper">
                 <a href="">
                   <img
-                    src="/src/assets/miranha.jpg"
+                    src={imagemTeste}
                     alt=""
                   />
                 </a>
