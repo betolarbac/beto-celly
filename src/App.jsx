@@ -155,7 +155,7 @@ function App() {
               </div>
               <div className="product__title">
                 <a href="">
-                  uma surpresa preparada com carinho para todos que nos ama
+                  uma surpresa preparada com carinho para todos que nos amam
                 </a>
               </div>
 
