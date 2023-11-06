@@ -4,6 +4,18 @@ import imagemSurpresa from "./assets/miranha.jpg";
 import banner from "./assets/templo-fortaleza.png";
 import perfil from "./assets/perfil.jpg";
 import logo from "./assets/logo.png";
+import pix from "./assets/pix.jpg";
+import { useCallback, useRef, useState } from "react";
+import ReactCanvasConfetti from "react-canvas-confetti";
+
+const canvasStyles = {
+  position: "absolute",
+  pointerEvents: "none",
+  width: "100%",
+  height: "100%",
+  top: 0,
+  left: 0,
+};
 
 function App() {
   const product = [
@@ -86,6 +98,62 @@ function App() {
     },
   ];
 
+  const refAnimationInstance = useRef(null);
+
+  const getInstance = useCallback((instance) => {
+    refAnimationInstance.current = instance;
+  }, []);
+
+  const makeShot = useCallback((particleRatio, opts) => {
+    refAnimationInstance.current &&
+      refAnimationInstance.current({
+        ...opts,
+        origin: { y: 0.7 },
+        particleCount: Math.floor(200 * particleRatio),
+      });
+  }, []);
+
+  const fire = useCallback(() => {
+    makeShot(0.25, {
+      spread: 26,
+      startVelocity: 55,
+    });
+
+    makeShot(0.2, {
+      spread: 60,
+    });
+
+    makeShot(0.35, {
+      spread: 100,
+      decay: 0.91,
+      scalar: 0.8,
+    });
+
+    makeShot(0.1, {
+      spread: 120,
+      startVelocity: 25,
+      decay: 0.92,
+      scalar: 1.2,
+    });
+
+    makeShot(0.1, {
+      spread: 120,
+      startVelocity: 45,
+    });
+  }, [makeShot]);
+
+  const [copiado, setCopiado] = useState(false);
+
+  const texto = "ee745eb9-5a73-4286-bc22-8e6d54f92441";
+  const copiarTexto = () => {
+    navigator.clipboard.writeText(texto);
+    fire();
+
+    setCopiado(true);
+    setTimeout(() => {
+      setCopiado(false);
+    }, 3500);
+  };
   return (
     <>
       <header className="header">
@@ -147,6 +215,52 @@ function App() {
               </div>
             </li>
           ))}
+
+          <li>
+            <div className="product__info">
+              <div className="product__image-wrapper">
+                <img src={pix} alt="" />
+              </div>
+              <div className="product__title">
+                <a href="">
+                  Se você deseja dar o presente em forma de pix, copie a chave clicando no botão 
+                </a>
+              </div>
+
+              <div className="product__value">
+                <p>R$ ?????</p>
+              </div>
+              <button onClick={copiarTexto} className="button">
+                Copiar Texto
+              </button>
+              <ReactCanvasConfetti
+                refConfetti={getInstance}
+                style={canvasStyles}
+              />
+              {copiado && (
+                <div className="pix">
+                  <p>Pix copiado com sucesso!</p>{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    x="0px"
+                    y="0px"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 48 48"
+                  >
+                    <path
+                      fill="#4caf50"
+                      d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"
+                    ></path>
+                    <path
+                      fill="#ccff90"
+                      d="M34.602,14.602L21,28.199l-5.602-5.598l-2.797,2.797L21,33.801l16.398-16.402L34.602,14.602z"
+                    ></path>
+                  </svg>
+                </div>
+              )}
+            </div>
+          </li>
 
           <li>
             <div className="product__info">

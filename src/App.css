@@ -4,8 +4,8 @@
   padding: 8px;
 }
 
-.header img{
- width: 100px;
+.header img {
+  width: 100px;
 }
 
 .banner__img {
@@ -79,7 +79,6 @@ hr {
   margin: 6rem auto 0 auto;
   position: relative;
 }
-
 
 .product__info {
   display: flex;
@@ -189,7 +188,6 @@ hr {
   color: #fb555f;
 }
 
-
 @media (max-width: 992px) {
   .list__summary {
     padding: 0 16px;
@@ -213,5 +211,20 @@ hr {
   .banner__img {
     height: 600px;
   }
-  
+}
+
+.pix {
+  color: white;
+  background: #fb555f;
+  padding: 10px;
+  border-radius: 5px;
+  width: 235px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
 }
