@@ -20,13 +20,6 @@ const canvasStyles = {
 function App() {
   const product = [
     {
-      id: "1",
-      name: "Faqueiro Malibu, 24 peças, Inox, Tramontina",
-      imagem: "https://m.media-amazon.com/images/I/8121jcjxWaL._AC_SY741_.jpg",
-      preco: "79,98",
-      link: "https://www.amazon.com.br/Faqueiro-Inox-Malibu-Tramontina-Voltagev/dp/B07WR4V7CL/ref=sr_1_3?crid=GGLDDAY32GMP&keywords=faqueiro+malibu&qid=1699130118&sprefix=faqueiro+mali%2Caps%2C205&sr=8-3",
-    },
-    {
       id: "2",
       name: "Conjunto de Bowls Tigelas de Inox com Tampa Plástica Electrolux",
       imagem: "https://m.media-amazon.com/images/I/51hUmO15FhL._AC_SX522_.jpg",
