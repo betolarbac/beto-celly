@@ -186,7 +186,7 @@ function App() {
             <li key={product.id}>
               <div className="product__info">
                 <div className="product__image-wrapper">
-                  <a href="">
+                  <a href={product.link}>
                     <img src={product.imagem} alt="" />
                   </a>
                 </div>
