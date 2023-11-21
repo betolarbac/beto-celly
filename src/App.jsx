@@ -48,13 +48,6 @@ function App() {
       link: "https://www.amazon.com.br/dp/B08HHD4JQP/?coliid=I1NQA1XG1TZBW&colid=27PP7WJ0HPNBS&ref_=list_c_wl_lv_ov_lig_dp_it&th=1",
     },
     {
-      id: "6",
-      name: "Tabua de Passar Roupa Fit com 3 Regulagem",
-      imagem: "https://m.media-amazon.com/images/I/41c7zpib-NL._AC_SY450_.jpg",
-      preco: "153,89",
-      link: "https://www.amazon.com.br/dp/B0CKWJZ8B3/?coliid=IQUT3JKMWNK0M&colid=27PP7WJ0HPNBS&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it",
-    },
-    {
       id: "7",
       name: "Carrinho Organizador Multiuso 3 Prateleiras Com Rodinhas/Estante/Fruteira (Preto)",
       imagem: "https://m.media-amazon.com/images/I/51nDroosQUL._AC_SX425_.jpg",
@@ -67,13 +60,6 @@ function App() {
       imagem: "https://m.media-amazon.com/images/I/61rHKuKQQfL._AC_SX522_.jpg",
       preco: "138,99",
       link: "https://www.amazon.com.br/dp/B092RH9TVW/?coliid=I2KBH4317SOL7R&colid=27PP7WJ0HPNBS&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it",
-    },
-    {
-      id: "9",
-      name: "FRITADEIRA ELÉTRICA SEM ÓLEO AIR FRYER 4L GAABOR 1400W DIGITAL TOUCH TECNOLOGIA CYCLONE 360 127V BRANCA",
-      imagem: "https://m.media-amazon.com/images/I/41t0jNeu1bL._AC_SX522_.jpg",
-      preco: "340,41",
-      link: "https://www.amazon.com.br/dp/B0BS4FFRB7/?coliid=I1AX8GJQ65EYDF&colid=27PP7WJ0HPNBS&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it",
     },
     {
       id: "10",
